@@ -9,5 +9,3 @@ w = observation.weather
 
 print(w.wind())
 print(w.humidity)
-print(w.rain)
-print(w.heat_index)
