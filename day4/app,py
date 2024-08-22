@@ -1,0 +1,13 @@
+import pyowm
+
+owm = pyowm.OWM('717819e7c305704c54445f2a86ac1a17')
+mgr = owm.weather_manager()
+observation = mgr.weather_at_place('London,uk')
+# w = observation.get_weather()
+
+w = observation.weather
+
+print(w.wind())
+print(w.humidity)
+print(w.rain)
+print(w.heat_index)
